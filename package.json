@@ -6,12 +6,13 @@
   "author": "Olavo Mello <olavo@agenciadix.com.br>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.8.9"
   },
-  "devDependencies":{
+  "devDependencies": {
     "nodemon": "^2.0.2"
   },
-  "scripts":{
-    "dev": "nodemon index.js"
+  "scripts": {
+    "dev": "nodemon src/index.js"
   }
 }
