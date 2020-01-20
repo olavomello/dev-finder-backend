@@ -5,7 +5,8 @@ const routes = require("./routes");
 const app = express();
 
 // DB connect
-mongoose.connect("mongodb+srv://oministack:nLhaAEUJf6AoUWaO@cluster0-ysld3.gcp.mongodb.net/db?retryWrites=true&w=majority",{
+mongoose.set('useCreateIndex', true); // Fix : DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+mongoose.connect("mongodb+srv://oministack:nLhaAEUJf6AoUWaO@cluster0-ysld3.gcp.mongodb.net/db_devs?retryWrites=true&w=majority",{
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
