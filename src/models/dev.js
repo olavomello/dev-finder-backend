@@ -1,7 +1,6 @@
 ﻿const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-
 const DevSchema = new Schema({
     name : {
         type: String,
