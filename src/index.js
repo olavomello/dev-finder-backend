@@ -1,5 +1,6 @@
 ﻿const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const routes = require("./routes");
 
 const app = express();
@@ -12,6 +13,7 @@ mongoose.connect("mongodb+srv://oministack:nLhaAEUJf6AoUWaO@cluster0-ysld3.gcp.m
 });
 
 // Set global return JSON
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
